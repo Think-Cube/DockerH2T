@@ -1,6 +1,6 @@
 # h2t - HTTP Hardening Tool
 
-[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t)
 
 ## Description
 
@@ -96,6 +96,6 @@ optional arguments:
 
 For now the output is only in normal mode. Understant it as follows:
 
-* <span style="color: red;">[+]</span> Red Headers are bad headers that open a breach on your website or maybe show a lots of information. We recommend fix it.
-* <span style="color: yellow;">[+]</span> Yellow Headers are good headers that is not applied on your website. We recommend apply them.
-* <span style="color: green">[-]</span> Green Headers are good headers that is already used in your website. It's shown when use `-s` flag.
+* <span style="color:red;">[+]</span> Red Headers are bad headers that open a breach on your website or maybe show a lots of information. We recommend fix it.
+* <span style="color:yellow;">[+]</span> Yellow Headers are good headers that is not applied on your website. We recommend apply them.
+* <span style="color:green">[-]</span> Green Headers are good headers that is already used in your website. It's shown when use `-s` flag.
