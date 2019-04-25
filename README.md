@@ -4,7 +4,7 @@
 
 ## Description
 
-**h2t** this is a simple tool to help sysadmins to hardening their websites.
+**h2t** this is a simple tool to help sysadmins to hardening their websites. App source we can find in https://github.com/gildasio/h2t
 
 ## Usage
 
