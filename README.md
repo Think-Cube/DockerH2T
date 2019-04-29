@@ -1,6 +1,6 @@
 # h2t - HTTP Hardening Tool
 
-[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t)
+[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t) [![Build Status](https://travis-ci.org/spy86/docker-h2t.svg?branch=master)](https://travis-ci.org/spy86/docker-h2t)
 
 ## Description
 
