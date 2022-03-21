@@ -1,6 +1,6 @@
 # h2t - HTTP Hardening Tool
 
-[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t) [![Build Status](https://travis-ci.org/spy86/docker-h2t.svg?branch=master)](https://travis-ci.org/spy86/docker-h2t) [![Known Vulnerabilities](https://snyk.io/test/github/spy86/docker-h2t/badge.svg?targetFile=app%2Frequirements.txt)](https://snyk.io/test/github/spy86/docker-h2t?targetFile=app%2Frequirements.txt)
+[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
