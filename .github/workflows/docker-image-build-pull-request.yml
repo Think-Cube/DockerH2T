@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      run: docker build . --file Dockerfile --tag ghcr.io/think-cube/dockerh2t:latest
