@@ -25,7 +25,7 @@
 3. Run the Docker container:
 
    ```bash
-   docker run -p 8000:8000 dockerh2t -h
+   docker run dockerh2t -h
    ```
 
 ## Usage
