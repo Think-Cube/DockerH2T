@@ -1,17 +1,39 @@
 # h2t - HTTP Hardening Tool
 
-[![docker-h2t](https://img.shields.io/badge/spy86-h2t-blue.svg)](https://cloud.docker.com/repository/docker/spy86/h2t) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Description
 
-**h2t** this is a simple tool to help sysadmins to hardening their websites. App source we can find in https://github.com/gildasio/h2t
+**h2t** this is a simple tool to help sysadmins to hardening their websites. App source we can find in <https://github.com/gildasio/h2t>
+
+### Prerequisites
+
+- Docker installed on your machine
+
+### Build and Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Think-Cube/DockerH2T.git
+   ```
+
+2. Build the Docker image:
+
+   ```bash
+   docker build -t dockerh2t .
+   ```
+
+3. Run the Docker container:
+
+   ```bash
+   docker run -p 8000:8000 dockerh2t -h
+   ```
 
 ## Usage
 
 **h2t** has subcommands: *list* and *scan*.
 
-~~~
-$ docker run -it spy86/h2t -h
+```bash
+$ docker run -it ghcr.io/think-cube/dockerh2t:latest -h
 usage: h2t.py [-h] {list,l,scan,s} ...
 
 h2t - HTTP Hardening Tool
@@ -24,14 +46,14 @@ positional arguments:
 
 optional arguments:
   -h, --help       show this help message and exit
-~~~
+```
 
 ### List Subcommand
 
 The **list** subcommand lists all headers cataloged in **h2t** and can show informations about it as a description, links for more information and for how to's.
 
-~~~
-# docker run -it spy86/h2t list -h
+```bash
+# docker run -it ghcr.io/think-cube/dockerh2t:latest list -h
 usage: h2t.py list [-h] [-p PRINT [PRINT ...]] [-B]
                    [-a | -H HEADERS [HEADERS ...]]
 
@@ -45,14 +67,14 @@ optional arguments:
   -a, --all             list all available headers [default]
   -H HEADERS [HEADERS ...], --headers HEADERS [HEADERS ...]
                         a list of headers to look for in the h2t catalog
-~~~
+```
 
 ### Scan Subcommand
 
 The **scan** subcommand perform a scan in a website looking for their headers.
 
-~~~
-# docker run -it spy86/h2t scan -h
+```bash
+# docker run -it ghcr.io/think-cube/dockerh2t:latest scan -h
 usage: h2t.py scan [-h] [-v] [-a] [-g] [-b] [-H HEADERS [HEADERS ...]]
                    [-p PRINT [PRINT ...]]
                    [-i IGNORE_HEADERS [IGNORE_HEADERS ...]] [-B] [-E]
@@ -89,13 +111,20 @@ optional arguments:
   -k, --insecure        don't verify SSL certificate as valid
   -r, --recommendation  output only recommendations [default]
   -s, --status          output actual status (eg: existent headers only)
-
-~~~
+```
 
 ### Output
 
 For now the output is only in normal mode. Understant it as follows:
 
-* <span style="color:red;">[+]</span> Red Headers are bad headers that open a breach on your website or maybe show a lots of information. We recommend fix it.
-* <span style="color:yellow;">[+]</span> Yellow Headers are good headers that is not applied on your website. We recommend apply them.
-* <span style="color:green">[-]</span> Green Headers are good headers that is already used in your website. It's shown when use `-s` flag.
+- <span style="color:red;">[+]</span> Red Headers are bad headers that open a breach on your website or maybe show a lots of information. We recommend fix it.
+- <span style="color:yellow;">[+]</span> Yellow Headers are good headers that is not applied on your website. We recommend apply them.
+- <span style="color:green">[-]</span> Green Headers are good headers that is already used in your website. It's shown when use `-s` flag.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Contribution
+
+Feel free to contribute by opening issues or pull requests. Your feedback and improvements are highly appreciated!
