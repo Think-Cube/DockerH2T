@@ -46,7 +46,7 @@ stages:
       inputs:
         repository: '$(IMAGE_NAME)'
         command: 'build'
-        Dockerfile: 'docker/Dockerfile'
+        Dockerfile: 'Dockerfile'
         tags: '$(IMAGE_TAG)'
 
 - stage: BuildAndPush
@@ -70,5 +70,5 @@ stages:
         containerRegistry: 'ghcr.io'
         repository: '$(IMAGE_NAME)'
         command: 'buildAndPush'
-        Dockerfile: 'docker/Dockerfile'
+        Dockerfile: 'Dockerfile'
         tags: '$(IMAGE_TAG)'
